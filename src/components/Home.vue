@@ -371,7 +371,8 @@
         <div class="row">
           <div class="col-md-12 col-sm-12">
             <div class="section-title-area wow fadeIn" data-wow-delay="300ms" data-wow-duration="500ms">
-              <h2 class="section-title color-white"><span class="title-tag"></span>{{ navItems[6] }}</h2>
+              <h2 class="section-title color-orange"><span class="title-tag"></span>{{ navItems[6] }}</h2>
+              <span class="sub-title color-white">Some companies we have worked with</span>
             </div>
           </div>
         </div>
