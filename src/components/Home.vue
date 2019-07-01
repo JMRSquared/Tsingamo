@@ -359,14 +359,11 @@
 <!--About Us-->
 <section  :id="navItemsID[8]">
 
-</section>
-
-  
+</section> 
   </div>
       </div>
-
     </section>
-        <section :id="navItemsID[8]" class="full-row background-1 overlay-1">
+        <section :id="navItemsID[6]" class="full-row background-1 overlay-1" >
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-12 col-sm-12">
@@ -377,8 +374,20 @@
           </div>
         </div>
         <div class="row">
-          
-
+        <div class="col-md-12">
+        <div class="col-md-3">   
+<img data-v-c8d45506="" alt="Nkwali" src="../assets/Nkwali.png" class="img-responsive img-fluid">
+        </div>
+              <div class="col-md-3">   
+<img data-v-c8d45506="" alt="Nkwali" src="../assets/networx.png" class="img-responsive img-fluid">
+        </div>
+              <div class="col-md-3">   
+<img data-v-c8d45506="" alt="Nkwali" src="../assets/pakanyo.png" class="img-responsive img-fluid">
+        </div>
+              <div class="col-md-3">   
+<img data-v-c8d45506="" alt="Nkwali" src="../assets/tbwa.png" class="img-responsive img-fluid">
+        </div>
+        </div>
         </div>
       </div>
    </section>
@@ -471,11 +480,17 @@
             <div class="col-md-12 col-sm-12 col-xs-12 justify-end">
               <div class="copyright">
                 <span>
-                        &copy; 2017 All Rights Reserved by <a href="#">Ovalleaf</a>
+                        &copy; 2017 All Rights Reserved by <a href="#">Tsingamo</a>
+                      </span>
+                      <br>
+                       <span class="color-black">
+                        Website Develped by <a href="https://ovalleaf.com/">ovalleaf</a>
                       </span>
               </div>
+               
             </div>
           </div>
+    
         </div>
       </div>
  
