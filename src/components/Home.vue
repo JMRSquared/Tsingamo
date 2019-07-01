@@ -151,8 +151,8 @@
           </div>    
         </div>
      </div>
-     <div class="row" ma-3>
-           <div class="col-md-3 col-sm-6 overlay" v-for="services in servicesText" > 
+     <div class="row " style="padding-left:20px;padding-right:20px">
+           <div class="col-md-3 col-sm-6" v-for="services in servicesText" > 
               <div class="quote-title" style="padding-right:15px; margin-left-15;margin-bottom:10px">
               <center>
                 <p class="color-white">
@@ -224,7 +224,7 @@
           <div class="row">
             <div class="col-md-12 col-sm-12">
               <div class="achivment-caption text-center margin-top-50 wow fadeInDown" data-wow-delay="300ms" data-wow-duration="100ms">
-                <h3 class="banner-title color-white">I have been registered as a Constituent Assessor with Services SETA for the following qualifications below which I believe they will be beneficial to industry.</h3>
+                <h3 class="banner-title color-white">Maladze has been registered as a Constituent Assessor with Services SETA for the following qualifications below which I believe they will be beneficial to industry.</h3>
                 <p>The number represents the <strong class="color-orange">NQF LEVEL</strong> and the label is the <strong>Qualification Name</strong></p>
               </div>
             </div>
@@ -355,41 +355,64 @@
               </div>
             </div>
           </div>
+          
+<!--About Us-->
+<section  :id="navItemsID[8]">
 
-          <div class="col-md-12 col-sm-12">
-            <div class="col-md-12 col-sm-12">
-              <center><h2 class="section-title"><span class="title-tag"><h2>ABOUT US</h2></span></h2>
-               </center>
-          </div><br>
-          <div class="row">
-            <div class="col-md-12 col-sm-12">
-      <center>
-          <span class="sub-title">
-             Tsingamo Management Consultant & People Development (Pty) Ltd is a 100% Black owned establishment founded in the year 2011. The company was established out of passion for people development and with a quest to improve people’s lives in both the
-            workplace and in the everyday life of unemployment.<br> Central to the achievement of our objectives is the ability to satisfy client needs efficiently and effectively, staff development, implementation of relevant training intervention to meet
-            the skill requirements of the specified industry and the communities thereof, we strive to comply with quality and accreditation standards as stipulated in the ETQA and SAQA.<br> We also strive to create mutually beneficial relationships with all
-            our stakeholders, in addition to the extensive industrial experience in the Human Resource Management Field we have a pool of experts in our faculty specializing in various areas. We work together with other companies as partners in providing
-            hands on solutions to day to day business challenges.<br> We believe in a comprehensive approach becoming part of our clients business and knowing as much as possible about their operations and challenges thereof. We want to partner and support
-            your organization in meeting your needs and most importantly reaching your goals in improving bottom line results and to sustain the competitive advantage.
-          </span>
-          </center>
-            </div>
+</section>
 
-          </div>
-
-           </div>
-        </div>
+  
+  </div>
       </div>
 
     </section>
-
-    <!-- Contact us Section-->
-    <section :id="navItemsID[6]" class="full-row background-1 overlay-1">
+        <section :id="navItemsID[8]" class="full-row background-1 overlay-1">
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-12 col-sm-12">
             <div class="section-title-area wow fadeIn" data-wow-delay="300ms" data-wow-duration="500ms">
               <h2 class="section-title color-white"><span class="title-tag"></span>{{ navItems[6] }}</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          
+
+        </div>
+      </div>
+   </section>
+<!--About us section-->
+<section :id="navItemsID[7]" class="full-row">
+<div class="container-fluid">
+        <div class="col-md-12 col-sm-12">
+            <div class="col-md-12 col-sm-12">
+              <center><h2 class="section-title"><span><h2>ABOUT US</h2></span></h2>
+               </center>
+             </div><br>
+            <div class="row">
+          <div class="col-md-8 col-md-offset-2 col-sm-12">
+            <center>
+              <span style="font-size:15px">
+             Tsingamo Management Consultant & People Development (Pty) Ltd is a 100% Black owned establishment founded in the year 2011. The company was established out of passion for people development and with a quest to improve people’s lives in both the
+            workplace and in the everyday life of unemployment.<br><br> Central to the achievement of our objectives is the ability to satisfy client needs efficiently and effectively, staff development, implementation of relevant training intervention to meet
+            the skill requirements of the specified industry and the communities thereof, we strive to comply with quality and accreditation standards as stipulated in the ETQA and SAQA.<br><br> We also strive to create mutually beneficial relationships with all
+            our stakeholders, in addition to the extensive industrial experience in the Human Resource Management Field we have a pool of experts in our faculty specializing in various areas. We work together with other companies as partners in providing
+            hands on solutions to day to day business challenges.<br><br> We believe in a comprehensive approach becoming part of our clients business and knowing as much as possible about their operations and challenges thereof. We want to partner and support
+            your organization in meeting your needs and most importantly reaching your goals in improving bottom line results and to sustain the competitive advantage.
+               </span>
+          </center>
+        </div>
+     </div>
+           </div>
+      </div>
+</section>
+    <!-- Contact us Section-->
+    <section :id="navItemsID[8]" class="full-row background-1 overlay-1">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+            <div class="section-title-area wow fadeIn" data-wow-delay="300ms" data-wow-duration="500ms">
+              <h2 class="section-title color-white"><span class="title-tag"></span>{{ navItems[8] }}</h2>
             </div>
           </div>
         </div>
@@ -437,6 +460,7 @@
           -->
         </div>
       </div>
+   </section>
 
       <!--Footer Bottom-->
       <div id="footer-bottom">
@@ -453,7 +477,7 @@
           </div>
         </div>
       </div>
-    </section>
+ 
 
   </div>
 </template>
@@ -471,8 +495,10 @@ export default {
         "Strategic plan",
         "Services",
         "Expertise",
-        "Qualifications",
-        "Our team",
+        "Constituent Assessor Qualifications",
+        "Ourteam",
+        "Our Clients",
+        "About Us",
         "Contact us"
       ],
       navItemsID: [
@@ -480,8 +506,10 @@ export default {
         "StrategicPlan",
         "Services",
         "Expertise",
-        "Qualifications",
+        "ConstituentAssessorQualifications",
         "OurTeam",
+        "OurClients",
+        "AboutUs",
         "ContactUs"
       ],
       contactUs: {
