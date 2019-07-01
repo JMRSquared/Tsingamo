@@ -87,6 +87,12 @@
             <div class="form-group">
               <p>3. Further Education and Training Certificate: Project Management</p>
             </div>
+             <div class="form-group">
+              <p>4.Conduct a Disciplinary Hearing NQF 5</p>
+            </div>
+             <div class="form-group">
+              <p>5.Project Management NQF 4</p>
+            </div>
           </form>
         </div>
       </div>
@@ -142,14 +148,20 @@
                     Our services include Training,Learnership support services,ETQA related services and Skills Development/ SMME Consulting.
                   </span>
             </div>
-          </div>
-          <div class="col-md-4 col-md-offset-4 col-sm-12" textAlign="center">
-            <div class="card sub-title bg-gray full-row" >
-            <p v-for="text in servicesText ">{{ text }}</p>
-            </div>
-          </div>
+          </div>    
         </div>
      </div>
+     <div class="row" ma-3>
+           <div class="col-md-3 col-sm-6 overlay" v-for="services in servicesText" > 
+              <div class="quote-title" style="padding-right:15px; margin-left-15;margin-bottom:10px">
+              <center>
+                <p class="color-white">
+                  {{ services }}
+                </p>
+                </center>
+            </div>
+          </div>
+          </div>
     </section>
 
     <!-- Expertise -->
@@ -382,12 +394,11 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-4 col-md-offset-1 col-sm-12">
+          <div class="col-md-4 col-md-offset-4 col-sm-12">
             <div class="bg-white overlay traingle">
               <div class="quote-title color-white">
                 <center>
-                  <h3 class="color-white">Contact Details</h3>
-                </center>
+                  <h3 class="color-white">Contact Details</h3>              
                 <p>
                   <strong>Company Registration : </strong> {{ contactUs.companyRegistration }}
                 </p>
@@ -403,9 +414,11 @@
                 <p>
                   <strong>Email Address : </strong> {{ contactUs.email }}
                 </p>
+                 </center>
               </div>
             </div>
           </div>
+          <!--
           <div class="col-md-6 col-sm-12 col-md-offset-1">
             <div class="bg-white" style="padding:15px">
               <form class="quote-form" method="post" action="#">
@@ -421,6 +434,7 @@
               </form>
             </div>
           </div>
+          -->
         </div>
       </div>
 
@@ -428,24 +442,11 @@
       <div id="footer-bottom">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-md-4 col-sm-12 col-xs-12">
-              <ul class="bottom-nav">
-                <li>
-                  <span>Created by </span></li>
-                <li>
-                  <a target="__blank" href="http://jmrsquared.com/joe">Sirwali Uzzie</a></li>
-              </ul>
-            </div>
-            <div class="col-md-4 col-sm-12 col-xs-12">
-              <ul class="bottom-nav">
-                <li>
-                </li>
-              </ul>
-            </div>
-            <div class="col-md-4 col-sm-12 col-xs-12">
+
+            <div class="col-md-12 col-sm-12 col-xs-12 justify-end">
               <div class="copyright">
                 <span>
-                        &copy; 2017 All Rights Reserved by <a href="#">Tsingamo</a>
+                        &copy; 2017 All Rights Reserved by <a href="#">Ovalleaf</a>
                       </span>
               </div>
             </div>
@@ -492,14 +493,15 @@ export default {
         email: "Mmakhoshi@tsingamo.com"
       },
       servicesText: [
-            		"• Workplace Learning programs",
-"• Management Support",
-"• Learnership Support Services",
-"• SMME’s support",
-"• Chairing Disciplinary Hearings",
-"• Representation at CCMA/Bargaining Chambers",
-"• Develop Human Resources Policies and procedures",
-"• Workplace Performance Management"
+            		" Workplace Learning programs",
+" Management Support",
+" Learnership Support Services",
+" SMME’s support",
+" Chairing Disciplinary Hearings",
+" Representation at CCMA/Bargaining Chambers",
+" Develop Human Resources Policies and procedures",
+" Workplace Performance Management",
+"Entrepreneurship Development."
       ],
       strategicPlans: [
         {
