@@ -781,7 +781,8 @@ export default {
         "static/training/4.jpeg",
         "static/training/5.jpeg",
         "static/training/6.jpeg",
-        "static/training/7.jpeg"
+        "static/training/7.jpeg",
+        "static/training/10.png"
       ],
       setaAccreditations: [
         "National Certificate: Generic Management NQF 5",
