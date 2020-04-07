@@ -353,9 +353,7 @@
                   <td class="nqfLabel">
                     {{ qualification.text }}
                   </td>
-                  <td class="nqfLevel">
-                    {{ qualification.count }}
-                  </td>
+                  <td class="nqfLevel">NQF LEVEL {{ qualification.count }}</td>
                 </tr>
               </table>
             </div>
@@ -717,7 +715,36 @@
         </div>
       </div>
     </section>
-
+    <section :id="navItemsID[9]" class="full-row">
+      <div class="container-fluid">
+        <div class="col-md-12 col-sm-12">
+          <div class="col-md-12 col-sm-12">
+            <center>
+              <h2 class="section-title">
+                <span><h2>Gallery</h2></span>
+              </h2>
+            </center>
+          </div>
+          <br />
+          <div class="row" style="margin-top:10vh">
+            <div
+              v-for="(pic, i) in pictures"
+              :key="i"
+              style="padding-top:10px"
+              class="col-md-3 col-sm-6"
+            >
+              <div class="full-row overflow-hidden">
+                <img
+                  :src="pic"
+                  style="width:100%;height:auto;border-radius:0px"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!--Footer Bottom-->
     <div id="footer-bottom">
       <div class="container-fluid">
@@ -747,6 +774,15 @@ export default {
       selectedMember: 0,
       selectedOption: true,
       showLessQualifications: true,
+      pictures: [
+        "static/training/0.jpeg",
+        "static/training/1.jpeg",
+        "static/training/2.jpeg",
+        "static/training/4.jpeg",
+        "static/training/5.jpeg",
+        "static/training/6.jpeg",
+        "static/training/7.jpeg"
+      ],
       setaAccreditations: [
         "National Certificate: Generic Management NQF 5",
         "National Certificate: New Venture Creation NQF 2",
@@ -764,7 +800,8 @@ export default {
         "Our team",
         "Our Clients",
         "About Us",
-        "Contact us"
+        "Contact us",
+        "Gallery"
       ],
       navItemsID: [
         "Home",
@@ -775,7 +812,8 @@ export default {
         "OurTeam",
         "OurClients",
         "AboutUs",
-        "ContactUs"
+        "ContactUs",
+        "Gallery"
       ],
       contactUs: {
         companyRegistration: "2011/009307/07",
@@ -917,91 +955,165 @@ export default {
       ],
       qualifications: [
         {
-          id: 49648,
-          count: 2,
-          text: "National Certificate: New Venture Creation (SMME)"
+          id: "93993/ LP - 48641",
+          text: "National Certificate: Labour Relations Practice",
+          count: 5
         },
         {
-          id: 48888,
-          count: 5,
-          text: "National Diploma: Hiring Operations Management"
-        },
-        {
-          id: 49419,
-          count: 5,
-          text: "National Diploma: Business Consulting Practice"
-        },
-        {
-          id: 49076,
-          count: 5,
+          id: "49076",
           text:
-            "National Diploma: Organisational Transformation and Change Management"
+            "National Diploma: Organisational Transformation and Change Management",
+          count: 5
         },
         {
-          id: 48889,
-          count: 4,
-          text: "Further Education and Training Certificate: Hiring Operations"
+          id: "48888",
+          text: "National Diploma: Hiring Operations Management",
+          count: 5
         },
         {
-          id: 49784,
-          count: 5,
+          id: "48889",
+          text: "Further Education and Training Certificate: Hiring Operations",
+          count: 4
+        },
+        {
+          id: "49419",
+          text: "National Diploma: Business Consulting Practice",
+          count: 5
+        },
+        {
+          id: "49648",
+          text: "National Certificate: New Venture Creation (SMME)",
+          count: 2
+        },
+        {
+          id: "93994/ LP - 49784",
           text:
-            "National Diploma: Labour Relations Practice: Dispute Resolution"
+            "National Diploma: Labour Relations Practice: Dispute Resolution",
+          count: 5
         },
         {
-          id: "57712 LP 58344",
-          count: 4,
+          id: "57712/ LP - 58344",
           text:
-            "Further Education and Training Certificate: Generic Management : Administration Management"
+            "Further Education and Training Certificate: Generic Management",
+          count: 4
         },
         {
-          id: "57712 LP 74630",
-          count: 4,
+          id: "57712/ LP - 74630",
           text:
-            "Further Education and Training Certificate: Generic Management: General Management"
+            "Further Education and Training Certificate: Generic Management",
+          count: 4
         },
         {
-          id: 58063,
-          count: 4,
+          id: "58063",
           text:
-            "Further Education and Training Certificate: Labour Recruitment Services"
+            "Further Education and Training Certificate: Labour Recruitment Services",
+          count: 4
         },
         {
-          id: "59201 LP 60269",
-          count: 5,
-          text: "National Certificate: Generic Management: General Management"
-        },
-        {
-          id: "59201 LP 74512",
-          count: 5,
-          text: "National Certificate: Generic Management: Strategic Management"
-        },
-        {
-          id: "61595 LP 59909",
-          count: 4,
+          id: "61595/ LP - 59909",
           text:
-            "Further Education and Training Certificate: Business Administration Services"
+            "Further Education and Training Certificate: Business Administration Services",
+          count: 4
         },
         {
-          id: 61755,
-          count: 1,
-          text: "General Education and Training Certificate: Business Practice"
+          id: "61755",
+          text: "General Education and Training Certificate: Business Practice",
+          count: 1
         },
         {
-          id: 66249,
-          count: 4,
+          id: "66249",
           text:
-            "Further Education and Training Certificate: New Venture Creation"
+            "Further Education and Training Certificate: New Venture Creation",
+          count: 4
         },
         {
-          id: 74570,
-          count: 6,
-          text: "National Certificate: Labour Relations Practice"
+          id: "74570",
+          text: "National Certificate: Labour Relations Practice",
+          count: 6
         },
         {
-          id: 79886,
-          count: 5,
-          text: "National Certificate: Business Advising"
+          id: "79886",
+          text: "National Certificate: Business Advising",
+          count: 5
+        },
+        {
+          id: "71490/ LP - 73269",
+          text: "National Certificate: Contact Centre Support",
+          count: 2
+        },
+        {
+          id: "67465/ LP - 23655",
+          text: "National Certificate: Business Administration Services",
+          count: 3
+        },
+        {
+          id: "67465/ LP - 67515",
+          text: "National Certificate: Business Administration Services",
+          count: 3
+        },
+        {
+          id: "93997/ LP - 80566",
+          text:
+            "National Certificate: Contact Centre and Business Process Outsourcing Support",
+          count: 3
+        },
+        {
+          id: "93996/ LP - 71489",
+          text:
+            "Further Education and Training Certificate: Contact Centre Operations",
+          count: 4
+        },
+        {
+          id: "67464/ LP - 59276",
+          text: "Further Education and Training Certificate: Marketing",
+          count: 4
+        },
+        {
+          id: "20904",
+          text: "National Diploma: Marketing Communications",
+          count: 5
+        },
+        {
+          id: "61593/ LP - 20900",
+          text: "National Diploma: Marketing Management",
+          count: 5
+        },
+        {
+          id: "59201/ LP - 60269",
+          text: "National Certificate: Generic Management",
+          count: 5
+        },
+        {
+          id: "59201/ LP - 60273",
+          text: "National Certificate: Generic Management",
+          count: 5
+        },
+        {
+          id: "59201/ LP - 74512",
+          text: "National Certificate: Generic Management",
+          count: 5
+        },
+        {
+          id: "48883",
+          text:
+            "Further Education and Training Certificate: Small Business Advising (Information Support)",
+          count: 4
+        },
+        {
+          id: "23833",
+          text: "National Certificate: Business Administration Services",
+          count: 2
+        },
+        {
+          id: "48874",
+          text:
+            "National Certificate: Business Consulting Practice (Enterprise Resource Planning)",
+          count: 5
+        },
+        {
+          id: "59201/ LP - 60269",
+          text: "National Certificate: Generic Management",
+          count: 5
         }
       ],
       shortCourses: [
