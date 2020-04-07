@@ -106,23 +106,12 @@
             <div class="form-group">
               <h5>Qualifications</h5>
             </div>
-            <div class="form-group">
-              <p>1. National Certificate: New Venture Creation</p>
-            </div>
-            <div class="form-group">
-              <p>2. National Certificate: Labour Relations Practice</p>
-            </div>
-            <div class="form-group">
-              <p>
-                3. Further Education and Training Certificate: Project
-                Management
-              </p>
-            </div>
-            <div class="form-group">
-              <p>4.Conduct a Disciplinary Hearing NQF 5</p>
-            </div>
-            <div class="form-group">
-              <p>5.Project Management NQF 4</p>
+            <div
+              v-for="(setaAccredited, i) in setaAccreditations"
+              :key="`${i}-seta`"
+              class="form-group"
+            >
+              <p>{{ i + 1 }}. {{ setaAccredited }}</p>
             </div>
           </form>
         </div>
@@ -728,13 +717,21 @@ export default {
       selectedMember: 0,
       selectedOption: true,
       showLessQualifications: true,
+      setaAccreditations: [
+        "National Certificate: Generic Management NQF 5",
+        "National Certificate: New Venture Creation NQF 2",
+        "National Certificate: New Venture Creation NQF 4",
+        "National Certificate: Labor Relations Practice NQF 5",
+        "Conduct a Disciplinary Hearing NQF 5",
+        "Project Management NQF 4"
+      ],
       navItems: [
         "Home",
         "Strategic plan",
         "Services",
         "Expertise",
         "Constituent Assessor Qualifications",
-        "Ourteam",
+        "Our team",
         "Our Clients",
         "About Us",
         "Contact us"
@@ -767,7 +764,7 @@ export default {
         " Representation at CCMA/Bargaining Chambers",
         " Develop Human Resources Policies and procedures",
         " Workplace Performance Management",
-        "Entrepreneurship Development."
+        " Entrepreneurship Development."
       ],
       strategicPlans: [
         {
@@ -889,11 +886,6 @@ export default {
         }
       ],
       qualifications: [
-        {
-          id: 48641,
-          count: 5,
-          text: "National Certificate: Labour Relations Practice"
-        },
         {
           id: 49648,
           count: 2,
