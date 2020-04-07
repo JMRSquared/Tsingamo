@@ -381,6 +381,36 @@
             </div>
           </div>
         </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-sm-12">
+              <div
+                class="achivment-caption text-center margin-top-50 wow fadeInDown"
+                data-wow-delay="300ms"
+                data-wow-duration="100ms"
+              >
+                <h3 class="banner-title color-white">
+                  We offer the following skills programs / short courses
+                </h3>
+              </div>
+            </div>
+            <div class="fact-counter color-white">
+              <div
+                class="col-sm-12"
+                v-for="(shortCourse, i) in shortCourses"
+                :key="i"
+              >
+                <div
+                  class="wow fadeIn"
+                  data-wow-delay="300ms"
+                  data-wow-duration="500ms"
+                >
+                  <p class="subject color-white">* {{ shortCourse }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -973,6 +1003,19 @@ export default {
           count: 5,
           text: "National Certificate: Business Advising"
         }
+      ],
+      shortCourses: [
+        "Emotional Intelligence- Applying principles and concepts to self management and people management",
+        "Combat Corruption- Plan Development",
+        "Recruitment and Selection",
+        "Team Building to reach goals and objectives",
+        "Innovation - Creating an environment that promotes innovation",
+        "Operational Plan : Development, Implementation & Evaluation",
+        "Talent Management & People Development",
+        "Formulate recommendations for a change process",
+        "Managing a diverse workforce to add value",
+        "Performance Standards monitoring and evaluation",
+        "Risk Management, monitoring and assessment."
       ]
     };
   },
