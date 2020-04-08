@@ -659,15 +659,15 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-12 col-sm-12 col-xs-12 justify-end">
-            <div class="copyright">
-              <span>
-                &copy; 2017 All Rights Reserved by <a href="#">Tsingamo</a>
-              </span>
-              <br />
-              <span class="color-black">
-                Website Develped by <a href="https://ovalleaf.com/">ovalleaf</a>
-              </span>
-            </div>
+            <span class="copyright">
+              Website Develped by
+              <a href="https://jmrsquared.com">JMRSquared</a>
+            </span>
+          </div>
+          <div class="col-md-12 col-sm-12 col-xs-12 justify-end">
+            <span class="copyright">
+              &copy; 2020 All Rights Reserved by <a href="#">Tsingamo</a>
+            </span>
           </div>
         </div>
       </div>
