@@ -118,56 +118,48 @@
       </div>
     </section>
 
-    <!-- Strategic plan Section-->
+    <!--About us section-->
     <section :id="navItemsID[1]" class="full-row">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6 col-md-4">
-            <img
-              class="img-responsive img-fluid wow zoomIn"
-              src="static/logo.png"
-              alt=""
-            />
-          </div>
-        </div>
-        <div class="row">
+      <div class="container-fluid">
+        <div class="col-md-12 col-sm-12">
           <div class="col-md-12 col-sm-12">
-            <div
-              class="section-title-area wow fadeIn"
-              data-wow-delay="300ms"
-              data-wow-duration="500ms"
-            >
-              <h2 class="section-title color-black">
-                <span class="title-tag">
-                  Vision, Mission and Objectives
-                </span>
-                {{ navItems[1] }}
+            <center>
+              <h2 class="section-title">
+                <span><h2>ABOUT US</h2></span>
               </h2>
-            </div>
+            </center>
           </div>
-        </div>
-        <div class="row">
-          <div
-            class="col-md-4 col-sm-6"
-            v-for="(plan, i) in strategicPlans"
-            :key="i"
-          >
-            <div
-              class="welcome-item image-rotate wow fadeInDown"
-              data-wow-delay="300ms"
-              data-wow-duration="500ms"
-            >
-              <a class="overflow-hidden text-center">
-                <i :class="plan.icon"></i>
-              </a>
-              <a class="text-center">
-                <h4 class="thumb-title">
-                  {{ plan.title }}
-                </h4>
-              </a>
-              <p>
-                {{ plan.text }}
-              </p>
+          <br />
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2 col-sm-12">
+              <center>
+                <span style="font-size:15px">
+                  Tsingamo Management Consultant & People Development (Pty) Ltd
+                  is a 100% Black owned establishment founded in the year 2011.
+                  The company was established out of passion for people
+                  development and with a quest to improve people’s lives in both
+                  the workplace and in the everyday life of unemployment.<br /><br />
+                  Central to the achievement of our objectives is the ability to
+                  satisfy client needs efficiently and effectively, staff
+                  development, implementation of relevant training intervention
+                  to meet the skill requirements of the specified industry and
+                  the communities thereof, we strive to comply with quality and
+                  accreditation standards as stipulated in the ETQA and SAQA.<br /><br />
+                  We also strive to create mutually beneficial relationships
+                  with all our stakeholders, in addition to the extensive
+                  industrial experience in the Human Resource Management Field
+                  we have a pool of experts in our faculty specializing in
+                  various areas. We work together with other companies as
+                  partners in providing hands on solutions to day to day
+                  business challenges.<br /><br />
+                  We believe in a comprehensive approach becoming part of our
+                  clients business and knowing as much as possible about their
+                  operations and challenges thereof. We want to partner and
+                  support your organization in meeting your needs and most
+                  importantly reaching your goals in improving bottom line
+                  results and to sustain the competitive advantage.
+                </span>
+              </center>
             </div>
           </div>
         </div>
@@ -211,8 +203,49 @@
       </div>
     </section>
 
+    <!-- Qualification-->
+    <section :id="navItemsID[3]">
+      <div class="full-row background-2 overlay-1 padding-70-0">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-sm-12">
+              <div
+                class="section-title-area wow fadeIn"
+                data-wow-delay="300ms"
+                data-wow-duration="500ms"
+              >
+                <h2 class="section-title color-orange">
+                  We offer the following {{ navItems[3] }}
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-md-3 col-sm-6"
+              v-for="(shortCourse, i) in shortCourses"
+              :key="i"
+            >
+              <div
+                class="quote-title"
+                style="padding-right:15px; margin-left-15;margin-bottom:10px"
+              >
+                <center>
+                  <p class="color-white">
+                    {{ shortCourse }}
+                  </p>
+                </center>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Expertise -->
-    <section :id="navItemsID[3]" class="bg-gray">
+    <section :id="navItemsID[4]" class="bg-gray">
       <div class="container">
         <div class="row">
           <div class="col-md-12 col-sm-12">
@@ -222,7 +255,7 @@
               data-wow-duration="500ms"
             >
               <h2 class="section-title">
-                <span class="title-tag">What We Offer</span>{{ navItems[3] }}
+                <span class="title-tag">What We Offer</span>{{ navItems[4] }}
               </h2>
               <span class="sub-title">
                 We offer training that are tailored to provide solutions to help
@@ -275,137 +308,56 @@
       </div>
     </section>
 
-    <!-- Qualification-->
-    <section :id="navItemsID[4]">
-      <div class="full-row background-2 overlay-1 padding-70-0">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 col-sm-12">
-              <div
-                class="section-title-area wow fadeIn"
-                data-wow-delay="300ms"
-                data-wow-duration="500ms"
-              >
-                <h2 class="section-title color-orange">{{ navItems[4] }}</h2>
-              </div>
-            </div>
+    <!-- Strategic plan Section-->
+    <section :id="navItemsID[5]" class="full-row">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-4">
+            <img
+              class="img-responsive img-fluid wow zoomIn"
+              src="static/logo.png"
+              alt=""
+            />
           </div>
-          <div class="row">
-            <div class="col-md-12 col-sm-12">
-              <div
-                class="achivment-caption text-center margin-top-50 wow fadeInDown"
-                data-wow-delay="300ms"
-                data-wow-duration="100ms"
-              >
-                <h3 class="banner-title color-white">
-                  Maladze has been registered as a Constituent Assessor with
-                  Services SETA for the following qualifications below which I
-                  believe they will be beneficial to industry.
-                </h3>
-                <p>
-                  The number represents the
-                  <strong class="color-orange">NQF LEVEL</strong> and the label
-                  is the <strong>Qualification Name</strong>
-                </p>
-              </div>
-            </div>
-            <div v-if="showLessQualifications" class="fact-counter color-white">
-              <div
-                class="col-md-3 col-sm-3"
-                v-show="i < 4"
-                v-for="(qualification, i) in qualifications"
-                :key="i"
-              >
-                <div
-                  class="achivement text-center count wow fadeIn"
-                  data-wow-delay="300ms"
-                  data-wow-duration="500ms"
-                >
-                  <strong
-                    class="count-num color-orange"
-                    data-speed="300"
-                    :data-stop="qualification.count"
-                    >{{ qualification.count }}</strong
-                  >
-                  <span class="subject color-white">{{
-                    qualification.text
-                  }}</span>
-                </div>
-              </div>
-            </div>
-            <div v-if="!showLessQualifications" class="col-md-12 col-sm-12">
-              <table class="bg-white">
-                <tr>
-                  <th>
-                    Qualification ID
-                  </th>
-                  <th>
-                    Qualification Name
-                  </th>
-                  <th>
-                    NQF Level
-                  </th>
-                </tr>
-                <tr v-for="qualification in qualifications">
-                  <td class="nqfId">
-                    {{ qualification.id }}
-                  </td>
-                  <td class="nqfLabel">
-                    {{ qualification.text }}
-                  </td>
-                  <td class="nqfLevel">NQF LEVEL {{ qualification.count }}</td>
-                </tr>
-              </table>
-            </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
             <div
-              class="col-md-12 col-sm-12 wow fadeInUp"
+              class="section-title-area wow fadeIn"
               data-wow-delay="300ms"
-              data-wow-duration="600ms"
+              data-wow-duration="500ms"
             >
-              <center>
-                <a
-                  role="button"
-                  v-on:click="showLessQualifications = !showLessQualifications"
-                  class="btn btn-primary center text-center margin-top-50"
-                >
-                  <span v-if="showLessQualifications">
-                    View All
-                  </span>
-                  <span v-else>
-                    View Less
-                  </span>
-                </a>
-              </center>
+              <h2 class="section-title color-black">
+                <span class="title-tag">
+                  Vision, Mission and Objectives
+                </span>
+                {{ navItems[5] }}
+              </h2>
             </div>
           </div>
         </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 col-sm-12">
-              <div
-                class="achivment-caption text-center margin-top-50 wow fadeInDown"
-                data-wow-delay="300ms"
-                data-wow-duration="100ms"
-              >
-                <h3 class="banner-title color-white">
-                  We offer the following skills programs / short courses
-                </h3>
-              </div>
-            </div>
-            <div class="fact-counter color-white">
-              <div
-                class="col-sm-12"
-                v-for="(shortCourse, i) in shortCourses"
-                :key="i"
-              >
-                <div
-                  class="wow fadeIn"
-                  data-wow-delay="300ms"
-                  data-wow-duration="500ms"
-                >
-                  <p class="subject color-white">* {{ shortCourse }}</p>
-                </div>
-              </div>
+        <div class="row">
+          <div
+            class="col-md-4 col-sm-6"
+            v-for="(plan, i) in strategicPlans"
+            :key="i"
+          >
+            <div
+              class="welcome-item image-rotate wow fadeInDown"
+              data-wow-delay="300ms"
+              data-wow-duration="500ms"
+            >
+              <a class="overflow-hidden text-center">
+                <i :class="plan.icon"></i>
+              </a>
+              <a class="text-center">
+                <h4 class="thumb-title">
+                  {{ plan.title }}
+                </h4>
+              </a>
+              <p>
+                {{ plan.text }}
+              </p>
             </div>
           </div>
         </div>
@@ -413,7 +365,7 @@
     </section>
 
     <!--Our Team -->
-    <section :id="navItemsID[5]" class="full-row">
+    <section :id="navItemsID[6]" class="full-row">
       <div class="container">
         <div class="row">
           <div class="col-md-12 col-sm-12">
@@ -424,7 +376,7 @@
             >
               <h2 class="section-title">
                 <span class="title-tag">Learn more about us</span
-                >{{ navItems[5] }}
+                >{{ navItems[6] }}
               </h2>
             </div>
           </div>
@@ -467,7 +419,7 @@
                         </h3>
                       </a>
                       <p></p>
-                      <p>
+                      <p v-if="team[selectedMember].cell">
                         <strong>Cell</strong>
                       </p>
                       <p
@@ -477,7 +429,7 @@
                         <a :href="'tel:' + cell">{{ cell }}</a>
                       </p>
 
-                      <p>
+                      <p v-if="team[selectedMember].email">
                         <strong>Email</strong>
                       </p>
                       <p>
@@ -507,17 +459,18 @@
                         'btn-primary': selectedOption,
                         'color-orange': !selectedOption
                       }"
-                      >Education</a
+                      >Experience</a
                     >
                     <a
                       class="btn"
                       role="button"
+                      v-if="team[selectedMember].education"
                       v-on:click="selectedOption = !selectedOption"
                       :class="{
                         'btn-primary': !selectedOption,
                         'color-orange': selectedOption
                       }"
-                      >Experience</a
+                      >Education</a
                     >
                   </div>
                   <div class="row bg-orange">
@@ -525,18 +478,20 @@
                       <div class="form-group">
                         <ul class="ul">
                           <li
-                            v-show="selectedOption"
-                            v-for="(edu, i) in team[selectedMember].education"
-                            :key="`${i}-edu`"
-                          >
-                            {{ edu }}
-                          </li>
-                          <li
-                            v-show="!selectedOption"
+                            v-show="
+                              selectedOption || !team[selectedMember].education
+                            "
                             v-for="(experi, i) in team[selectedMember].experi"
                             :key="`${i}-exp`"
                           >
                             {{ experi }}
+                          </li>
+                          <li
+                            v-show="!selectedOption"
+                            v-for="(edu, i) in team[selectedMember].education"
+                            :key="`${i}-edu`"
+                          >
+                            {{ edu }}
                           </li>
                         </ul>
                       </div>
@@ -546,13 +501,10 @@
               </div>
             </div>
           </div>
-
-          <!--About Us-->
-          <section :id="navItemsID[8]"></section>
         </div>
       </div>
     </section>
-    <section :id="navItemsID[6]" class="full-row background-1 overlay-1">
+    <section :id="navItemsID[7]" class="full-row overlay-1">
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-12 col-sm-12">
@@ -562,7 +514,7 @@
               data-wow-duration="500ms"
             >
               <h2 class="section-title color-orange">
-                <span class="title-tag"></span>{{ navItems[6] }}
+                <span class="title-tag"></span>{{ navItems[7] }}
               </h2>
               <span class="sub-title color-white"
                 >Some companies we have worked with</span
@@ -571,8 +523,8 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-12">
-            <div class="col-md-3">
+          <div class="col-md-12 center align-center">
+            <div class="col-md-2 center">
               <img
                 data-v-c8d45506=""
                 alt="Nkwali"
@@ -580,7 +532,7 @@
                 class="img-responsive img-fluid"
               />
             </div>
-            <div class="col-md-3">
+            <div class="col-md-2">
               <img
                 data-v-c8d45506=""
                 alt="Nkwali"
@@ -588,7 +540,7 @@
                 class="img-responsive img-fluid"
               />
             </div>
-            <div class="col-md-3">
+            <div class="col-md-2">
               <img
                 data-v-c8d45506=""
                 alt="Nkwali"
@@ -596,7 +548,7 @@
                 class="img-responsive img-fluid"
               />
             </div>
-            <div class="col-md-3">
+            <div class="col-md-2">
               <img
                 data-v-c8d45506=""
                 alt="Nkwali"
@@ -608,55 +560,41 @@
         </div>
       </div>
     </section>
-    <!--About us section-->
-    <section :id="navItemsID[7]" class="full-row">
+
+    <!-- Gallery -->
+    <section :id="navItemsID[8]" class="full-row">
       <div class="container-fluid">
         <div class="col-md-12 col-sm-12">
           <div class="col-md-12 col-sm-12">
             <center>
               <h2 class="section-title">
-                <span><h2>ABOUT US</h2></span>
+                <span><h2>Gallery</h2></span>
               </h2>
             </center>
           </div>
           <br />
-          <div class="row">
-            <div class="col-md-8 col-md-offset-2 col-sm-12">
-              <center>
-                <span style="font-size:15px">
-                  Tsingamo Management Consultant & People Development (Pty) Ltd
-                  is a 100% Black owned establishment founded in the year 2011.
-                  The company was established out of passion for people
-                  development and with a quest to improve people’s lives in both
-                  the workplace and in the everyday life of unemployment.<br /><br />
-                  Central to the achievement of our objectives is the ability to
-                  satisfy client needs efficiently and effectively, staff
-                  development, implementation of relevant training intervention
-                  to meet the skill requirements of the specified industry and
-                  the communities thereof, we strive to comply with quality and
-                  accreditation standards as stipulated in the ETQA and SAQA.<br /><br />
-                  We also strive to create mutually beneficial relationships
-                  with all our stakeholders, in addition to the extensive
-                  industrial experience in the Human Resource Management Field
-                  we have a pool of experts in our faculty specializing in
-                  various areas. We work together with other companies as
-                  partners in providing hands on solutions to day to day
-                  business challenges.<br /><br />
-                  We believe in a comprehensive approach becoming part of our
-                  clients business and knowing as much as possible about their
-                  operations and challenges thereof. We want to partner and
-                  support your organization in meeting your needs and most
-                  importantly reaching your goals in improving bottom line
-                  results and to sustain the competitive advantage.
-                </span>
-              </center>
+          <div class="row" style="margin-top:10vh">
+            <div
+              v-for="(pic, i) in pictures"
+              :key="i"
+              style="padding-top:10px"
+              class="col-md-3 col-sm-6"
+            >
+              <div class="full-row overflow-hidden">
+                <img
+                  :src="pic"
+                  style="width:100%;height:auto;border-radius:0px"
+                  alt=""
+                />
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
     <!-- Contact us Section-->
-    <section :id="navItemsID[8]" class="full-row background-1 overlay-1">
+    <section :id="navItemsID[9]" class="full-row background-1 overlay-1">
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-12 col-sm-12">
@@ -666,7 +604,7 @@
               data-wow-duration="500ms"
             >
               <h2 class="section-title color-white">
-                <span class="title-tag"></span>{{ navItems[8] }}
+                <span class="title-tag"></span>{{ navItems[9] }}
               </h2>
             </div>
           </div>
@@ -715,36 +653,7 @@
         </div>
       </div>
     </section>
-    <section :id="navItemsID[9]" class="full-row">
-      <div class="container-fluid">
-        <div class="col-md-12 col-sm-12">
-          <div class="col-md-12 col-sm-12">
-            <center>
-              <h2 class="section-title">
-                <span><h2>Gallery</h2></span>
-              </h2>
-            </center>
-          </div>
-          <br />
-          <div class="row" style="margin-top:10vh">
-            <div
-              v-for="(pic, i) in pictures"
-              :key="i"
-              style="padding-top:10px"
-              class="col-md-3 col-sm-6"
-            >
-              <div class="full-row overflow-hidden">
-                <img
-                  :src="pic"
-                  style="width:100%;height:auto;border-radius:0px"
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+
     <!--Footer Bottom-->
     <div id="footer-bottom">
       <div class="container-fluid">
@@ -794,27 +703,27 @@ export default {
       ],
       navItems: [
         "Home",
-        "Strategic plan",
+        "About Us",
         "Services",
+        "Skills Programs/Short courses",
         "Expertise",
-        "Constituent Assessor Qualifications",
+        "Strategic plan",
         "Our team",
         "Our Clients",
-        "About Us",
-        "Contact us",
-        "Gallery"
+        "Gallery",
+        "Contact us"
       ],
       navItemsID: [
         "Home",
-        "StrategicPlan",
+        "AboutUs",
         "Services",
-        "Expertise",
         "ConstituentAssessorQualifications",
+        "Expertise",
+        "StrategicPlan",
         "OurTeam",
         "OurClients",
-        "AboutUs",
-        "ContactUs",
-        "Gallery"
+        "Gallery",
+        "ContactUs"
       ],
       contactUs: {
         companyRegistration: "2011/009307/07",
@@ -852,7 +761,7 @@ export default {
           icon: "flaticon-locked-internet-security-padlock",
           title: "Objectives",
           text:
-            "provide qualifications that would enable learners to gain employment, retain new career fields and to up-grade current career skills. provide  quality eduction, Training and Development in accordance with the prescribed criteria of the South African development"
+            "Provide qualifications that would enable learners to gain employment, retain new career fields and to upgrade current career skills.Provide quality education, Training and Development in accordance with the prescribed criteria of the South African development"
         }
       ],
       expertises: [
@@ -913,10 +822,7 @@ export default {
         },
         {
           name: "Tebogo Khauoe",
-          cell: [],
-          email: "",
           img: "",
-          education: ["12 years entrepreneurial experience"],
           experi: [
             "• Entrepreneur, researcher, innovator, and founder of various entrepreneurial establishments",
             "• A principal of empowerment through the Leaho African Programmes that he has developed to educate entrepreneurs",
@@ -934,10 +840,7 @@ export default {
         },
         {
           name: "Tebogo Mothibinyane",
-          cell: [],
-          email: "",
           img: "",
-          education: [],
           experi: [
             "• Specializes in outcomes and value-based education with a unique style of transforming perceptions",
             "• Developing individual and team behaviour towards top team performance",
@@ -1118,17 +1021,18 @@ export default {
         }
       ],
       shortCourses: [
-        "Emotional Intelligence- Applying principles and concepts to self management and people management",
+        "Chairing Disciplinary Hearing",
         "Combat Corruption- Plan Development",
         "Recruitment and Selection",
-        "Team Building to reach goals and objectives",
-        "Innovation - Creating an environment that promotes innovation",
-        "Operational Plan : Development, Implementation & Evaluation",
         "Talent Management & People Development",
-        "Formulate recommendations for a change process",
         "Managing a diverse workforce to add value",
+        "Team Building to reach goals and objectives",
+        "Formulate recommendations for a change process",
         "Performance Standards monitoring and evaluation",
-        "Risk Management, monitoring and assessment."
+        "Risk Management, monitoring and assessment.",
+        "Operational Plan : Development, Implementation & Evaluation",
+        "Innovation - Creating an environment that promotes innovation",
+        "Emotional Intelligence- Applying principles and concepts to self management and people management"
       ]
     };
   },
