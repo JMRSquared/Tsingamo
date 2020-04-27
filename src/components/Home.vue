@@ -822,7 +822,7 @@ export default {
         },
         {
           name: "Tebogo Khauoe",
-          img: "",
+          img: "static/tebogo_khauoe.jpg",
           experi: [
             "• Entrepreneur, researcher, innovator, and founder of various entrepreneurial establishments",
             "• A principal of empowerment through the Leaho African Programmes that he has developed to educate entrepreneurs",
@@ -840,7 +840,7 @@ export default {
         },
         {
           name: "Tebogo Mothibinyane",
-          img: "",
+          img: "static/tebogo_mothibinyane.jpg",
           experi: [
             "• Specializes in outcomes and value-based education with a unique style of transforming perceptions",
             "• Developing individual and team behaviour towards top team performance",
