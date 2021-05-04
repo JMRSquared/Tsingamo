@@ -121,6 +121,13 @@
           </div>
           <br />
           <div class="row">
+            <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+              <center>
+                <video muted width="100%" src="../assets/ads/1.mp4" controls autoplay></video>
+              </center>
+            </div>
+          </div>
+          <div class="row">
             <div class="col-md-8 col-md-offset-2 col-sm-12">
               <center>
                 <span style="font-size:15px">
@@ -192,6 +199,18 @@
       </div>
     </section>
 
+    <section>
+      <div class="padding-70-0">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="../assets/ads/2.jpg" height="auto" width="100%" alt />
+          </div>
+          <div class="col-md-6">
+            <img src="../assets/ads/1.jpg" height="auto" width="100%" alt />
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Qualification-->
     <section :id="navItemsID[3]">
       <div class="full-row background-2 overlay-1 padding-70-0">
