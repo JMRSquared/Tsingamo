@@ -182,7 +182,7 @@
         </div>
       </div>
       <div class="row" style="padding-left:20px;padding-right:20px">
-        <div class="col-md-3 col-sm-6" v-for="services in servicesText">
+        <div class="col-md-3 col-sm-6" :key="i" v-for="(services,i) in servicesText">
           <div class="quote-title" style="padding-right:15px; margin-left-15;margin-bottom:10px">
             <center>
               <p class="color-white">{{ services }}</p>
@@ -261,7 +261,7 @@
               <h4>KEY FOCUSES :</h4>
             </div>
           </div>
-          <div class="col-md-4 col-sm-6" v-for="expertise in expertises">
+          <div class="col-md-4 col-sm-6" :key="i" v-for="(expertise,i) in expertises">
             <div
               class="service-item wow fadeInRight"
               data-wow-delay="100ms"

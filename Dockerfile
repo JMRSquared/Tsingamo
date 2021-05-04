@@ -11,5 +11,5 @@ RUN npm run build --fix
 
 FROM nginx:alpine
 
-COPY --from=build-stage /app/src/dist /etc/nginx/html
+COPY --from=build-stage /app/src/dist /usr/share/nginx/html
 CMD ["nginx"]
