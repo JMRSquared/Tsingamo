@@ -5,7 +5,7 @@
           				<div class="outer"></div>
           				<div class="inner"></div>
           			</div>
-          		</div> -->
+    </div>-->
 
     <!--Header Section-->
     <header id="header-1" class="header">
@@ -29,15 +29,14 @@
                     <span class="icon-bar"></span>
                   </button>
                 </div>
-                <div
-                  class="collapse navbar-collapse"
-                  id="bs-example-navbar-collapse-1"
-                >
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav navbar-right">
                     <li v-for="(navItem, i) in navItemsID" :key="i">
-                      <a role="button" class="" v-on:click="goto(navItem)">{{
-                        navItems[i]
-                      }}</a>
+                      <a role="button" class v-on:click="goto(navItem)">
+                        {{
+                          navItems[i]
+                        }}
+                      </a>
                     </li>
                   </ul>
                 </div>
@@ -50,18 +49,10 @@
     <!--Slider Section-->
     <section id="slider">
       <div class="slider-item" :id="navItemsID[0]">
-        <div
-          id="carousel-example-generic"
-          class="carousel slide"
-          data-ride="carousel"
-        >
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
           <!-- Indicators -->
           <ol class="carousel-indicators">
-            <li
-              data-target="#carousel-example-generic"
-              data-slide-to="0"
-              class="active"
-            ></li>
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
           </ol>
 
           <!-- Wrapper for slides -->
@@ -72,9 +63,7 @@
                 <div class="row">
                   <div class="col-md-8 col-sm-12 m-t-20">
                     <div class="carousel-caption">
-                      <span class="title-tag"
-                        >TSINGAMO management consultant</span
-                      >
+                      <span class="title-tag">TSINGAMO management consultant</span>
                       <span>AND People Development</span>
                       <p>
                         is a 100% black owned company officially established in
@@ -88,8 +77,7 @@
                       <a
                         class="btn btn-primary margin-top-30"
                         v-on:click="goto(navItemsID[7])"
-                        >Contact Us</a
-                      >
+                      >Contact Us</a>
                     </div>
                   </div>
                 </div>
@@ -125,7 +113,9 @@
           <div class="col-md-12 col-sm-12">
             <center>
               <h2 class="section-title">
-                <span><h2>ABOUT US</h2></span>
+                <span>
+                  <h2>ABOUT US</h2>
+                </span>
               </h2>
             </center>
           </div>
@@ -138,21 +128,24 @@
                   is a 100% Black owned establishment founded in the year 2011.
                   The company was established out of passion for people
                   development and with a quest to improve people’s lives in both
-                  the workplace and in the everyday life of unemployment.<br /><br />
-                  Central to the achievement of our objectives is the ability to
+                  the workplace and in the everyday life of unemployment.
+                  <br />
+                  <br />Central to the achievement of our objectives is the ability to
                   satisfy client needs efficiently and effectively, staff
                   development, implementation of relevant training intervention
                   to meet the skill requirements of the specified industry and
                   the communities thereof, we strive to comply with quality and
-                  accreditation standards as stipulated in the ETQA and SAQA.<br /><br />
-                  We also strive to create mutually beneficial relationships
+                  accreditation standards as stipulated in the ETQA and SAQA.
+                  <br />
+                  <br />We also strive to create mutually beneficial relationships
                   with all our stakeholders, in addition to the extensive
                   industrial experience in the Human Resource Management Field
                   we have a pool of experts in our faculty specializing in
                   various areas. We work together with other companies as
                   partners in providing hands on solutions to day to day
-                  business challenges.<br /><br />
-                  We believe in a comprehensive approach becoming part of our
+                  business challenges.
+                  <br />
+                  <br />We believe in a comprehensive approach becoming part of our
                   clients business and knowing as much as possible about their
                   operations and challenges thereof. We want to partner and
                   support your organization in meeting your needs and most
@@ -177,7 +170,8 @@
               data-wow-duration="500ms"
             >
               <h2 class="section-title color-white">
-                <span class="title-tag"></span>{{ navItems[2] }}
+                <span class="title-tag"></span>
+                {{ navItems[2] }}
               </h2>
               <span class="sub-title color-white">
                 Our services include Training,Learnership support services,ETQA
@@ -187,16 +181,11 @@
           </div>
         </div>
       </div>
-      <div class="row " style="padding-left:20px;padding-right:20px">
+      <div class="row" style="padding-left:20px;padding-right:20px">
         <div class="col-md-3 col-sm-6" v-for="services in servicesText">
-          <div
-            class="quote-title"
-            style="padding-right:15px; margin-left-15;margin-bottom:10px"
-          >
+          <div class="quote-title" style="padding-right:15px; margin-left-15;margin-bottom:10px">
             <center>
-              <p class="color-white">
-                {{ services }}
-              </p>
+              <p class="color-white">{{ services }}</p>
             </center>
           </div>
         </div>
@@ -214,28 +203,20 @@
                 data-wow-delay="300ms"
                 data-wow-duration="500ms"
               >
-                <h2 class="section-title color-orange">
-                  We offer the following {{ navItems[3] }}
-                </h2>
+                <h2 class="section-title color-orange">We offer the following {{ navItems[3] }}</h2>
               </div>
             </div>
           </div>
         </div>
         <div class="container">
           <div class="row">
-            <div
-              class="col-md-3 col-sm-6"
-              v-for="(shortCourse, i) in shortCourses"
-              :key="i"
-            >
+            <div class="col-md-3 col-sm-6" v-for="(shortCourse, i) in shortCourses" :key="i">
               <div
                 class="quote-title"
                 style="padding-right:15px; margin-left-15;margin-bottom:10px"
               >
                 <center>
-                  <p class="color-white">
-                    {{ shortCourse }}
-                  </p>
+                  <p class="color-white">{{ shortCourse }}</p>
                 </center>
               </div>
             </div>
@@ -255,7 +236,8 @@
               data-wow-duration="500ms"
             >
               <h2 class="section-title">
-                <span class="title-tag">What We Offer</span>{{ navItems[4] }}
+                <span class="title-tag">What We Offer</span>
+                {{ navItems[4] }}
               </h2>
               <span class="sub-title">
                 We offer training that are tailored to provide solutions to help
@@ -276,9 +258,7 @@
         <div class="row">
           <div class="col-xs-12 row">
             <div class="offset-md-3 col-md-6">
-              <h4>
-                KEY FOCUSES :
-              </h4>
+              <h4>KEY FOCUSES :</h4>
             </div>
           </div>
           <div class="col-md-4 col-sm-6" v-for="expertise in expertises">
@@ -292,15 +272,12 @@
                 <a>
                   <h4 class="service-title">{{ expertise.header }}</h4>
                 </a>
-                <p>
-                  {{ expertise.text }}
-                </p>
+                <p>{{ expertise.text }}</p>
                 <a
                   class="btn-link"
                   target="_blank"
                   :href="'https://google.com/search?q=' + expertise.header"
-                  >Learn More</a
-                >
+                >Learn More</a>
               </div>
             </div>
           </div>
@@ -313,11 +290,7 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-6 col-md-4">
-            <img
-              class="img-responsive img-fluid wow zoomIn"
-              src="static/logo.png"
-              alt=""
-            />
+            <img class="img-responsive img-fluid wow zoomIn" src="static/logo.png" alt />
           </div>
         </div>
         <div class="row">
@@ -328,20 +301,14 @@
               data-wow-duration="500ms"
             >
               <h2 class="section-title color-black">
-                <span class="title-tag">
-                  Vision, Mission and Objectives
-                </span>
+                <span class="title-tag">Vision, Mission and Objectives</span>
                 {{ navItems[5] }}
               </h2>
             </div>
           </div>
         </div>
         <div class="row">
-          <div
-            class="col-md-4 col-sm-6"
-            v-for="(plan, i) in strategicPlans"
-            :key="i"
-          >
+          <div class="col-md-4 col-sm-6" v-for="(plan, i) in strategicPlans" :key="i">
             <div
               class="welcome-item image-rotate wow fadeInDown"
               data-wow-delay="300ms"
@@ -351,13 +318,9 @@
                 <i :class="plan.icon"></i>
               </a>
               <a class="text-center">
-                <h4 class="thumb-title">
-                  {{ plan.title }}
-                </h4>
+                <h4 class="thumb-title">{{ plan.title }}</h4>
               </a>
-              <p>
-                {{ plan.text }}
-              </p>
+              <p>{{ plan.text }}</p>
             </div>
           </div>
         </div>
@@ -375,8 +338,8 @@
               data-wow-duration="500ms"
             >
               <h2 class="section-title">
-                <span class="title-tag">Learn more about us</span
-                >{{ navItems[6] }}
+                <span class="title-tag">Learn more about us</span>
+                {{ navItems[6] }}
               </h2>
             </div>
           </div>
@@ -389,9 +352,7 @@
               :class="{ 'tab-selected': i == selectedMember }"
               class="tab"
             >
-              <div class="blog-text tab-item">
-                {{ member.name }}
-              </div>
+              <div class="blog-text tab-item">{{ member.name }}</div>
             </div>
           </div>
         </div>
@@ -409,23 +370,18 @@
                       <img
                         :src="team[selectedMember].img"
                         style="width:100%;height:100%;border-radius:0px"
-                        alt=""
+                        alt
                       />
                     </div>
                     <div class="blog-text">
                       <a>
-                        <h3 class="thumb-title">
-                          {{ team[selectedMember].name }}
-                        </h3>
+                        <h3 class="thumb-title">{{ team[selectedMember].name }}</h3>
                       </a>
                       <p></p>
                       <p v-if="team[selectedMember].cell">
                         <strong>Cell</strong>
                       </p>
-                      <p
-                        v-for="(cell, j) in team[selectedMember].cell"
-                        :key="`${j}-c`"
-                      >
+                      <p v-for="(cell, j) in team[selectedMember].cell" :key="`${j}-c`">
                         <a :href="'tel:' + cell">{{ cell }}</a>
                       </p>
 
@@ -433,24 +389,20 @@
                         <strong>Email</strong>
                       </p>
                       <p>
-                        <a :href="'mailto:' + team[selectedMember].email">{{
-                          team[selectedMember].email
-                        }}</a>
+                        <a :href="'mailto:' + team[selectedMember].email">
+                          {{
+                            team[selectedMember].email
+                          }}
+                        </a>
                       </p>
                     </div>
                   </div>
                 </div>
                 <div class="col-md-4 col-sm-12">
-                  <p>
-                    {{ team[selectedMember].history }}
-                  </p>
+                  <p>{{ team[selectedMember].history }}</p>
                 </div>
                 <div class="col-md-4 col-sm-12">
-                  <div
-                    class="btn-group btn-group-justified"
-                    role="group"
-                    aria-label="..."
-                  >
+                  <div class="btn-group btn-group-justified" role="group" aria-label="...">
                     <a
                       class="btn"
                       role="button"
@@ -459,8 +411,7 @@
                         'btn-primary': selectedOption,
                         'color-orange': !selectedOption
                       }"
-                      >Experience</a
-                    >
+                    >Experience</a>
                     <a
                       class="btn"
                       role="button"
@@ -470,8 +421,7 @@
                         'btn-primary': !selectedOption,
                         'color-orange': selectedOption
                       }"
-                      >Education</a
-                    >
+                    >Education</a>
                   </div>
                   <div class="row bg-orange">
                     <form class="quote-form" method="post" action="#">
@@ -483,16 +433,12 @@
                             "
                             v-for="(experi, i) in team[selectedMember].experi"
                             :key="`${i}-exp`"
-                          >
-                            {{ experi }}
-                          </li>
+                          >{{ experi }}</li>
                           <li
                             v-show="!selectedOption"
                             v-for="(edu, i) in team[selectedMember].education"
                             :key="`${i}-edu`"
-                          >
-                            {{ edu }}
-                          </li>
+                          >{{ edu }}</li>
                         </ul>
                       </div>
                     </form>
@@ -514,11 +460,10 @@
               data-wow-duration="500ms"
             >
               <h2 class="section-title color-orange">
-                <span class="title-tag"></span>{{ navItems[7] }}
+                <span class="title-tag"></span>
+                {{ navItems[7] }}
               </h2>
-              <span class="sub-title color-white"
-                >Some companies we have worked with</span
-              >
+              <span class="sub-title color-white">Some companies we have worked with</span>
             </div>
           </div>
         </div>
@@ -526,7 +471,7 @@
           <div class="col-md-12 center align-center">
             <div class="col-md-2 center">
               <img
-                data-v-c8d45506=""
+                data-v-c8d45506
                 alt="Nkwali"
                 src="../assets/Nkwali.png"
                 class="img-responsive img-fluid"
@@ -534,7 +479,7 @@
             </div>
             <div class="col-md-2">
               <img
-                data-v-c8d45506=""
+                data-v-c8d45506
                 alt="Nkwali"
                 src="../assets/networx.png"
                 class="img-responsive img-fluid"
@@ -542,7 +487,7 @@
             </div>
             <div class="col-md-2">
               <img
-                data-v-c8d45506=""
+                data-v-c8d45506
                 alt="Nkwali"
                 src="../assets/pakanyo.png"
                 class="img-responsive img-fluid"
@@ -550,7 +495,7 @@
             </div>
             <div class="col-md-2">
               <img
-                data-v-c8d45506=""
+                data-v-c8d45506
                 alt="Nkwali"
                 src="../assets/tbwa.png"
                 class="img-responsive img-fluid"
@@ -568,7 +513,9 @@
           <div class="col-md-12 col-sm-12">
             <center>
               <h2 class="section-title">
-                <span><h2>Gallery</h2></span>
+                <span>
+                  <h2>Gallery</h2>
+                </span>
               </h2>
             </center>
           </div>
@@ -581,11 +528,7 @@
               class="col-md-3 col-sm-6"
             >
               <div class="full-row overflow-hidden">
-                <img
-                  :src="pic"
-                  style="width:100%;height:auto;border-radius:0px"
-                  alt=""
-                />
+                <img :src="pic" style="width:100%;height:auto;border-radius:0px" alt />
               </div>
             </div>
           </div>
@@ -604,7 +547,8 @@
               data-wow-duration="500ms"
             >
               <h2 class="section-title color-white">
-                <span class="title-tag"></span>{{ navItems[9] }}
+                <span class="title-tag"></span>
+                {{ navItems[9] }}
               </h2>
             </div>
           </div>
@@ -616,19 +560,25 @@
                 <center>
                   <h3 class="color-white">Contact Details</h3>
                   <p>
-                    <strong>Company Registration : </strong>
+                    <strong>Company Registration :</strong>
                     {{ contactUs.companyRegistration }}
                   </p>
                   <p>
-                    <strong>Services SETA Accreditation No : </strong>
+                    <strong>Services SETA Accreditation No :</strong>
                     {{ contactUs.servicesSETAAccreditationNo }}
                   </p>
-                  <p><strong>Address : </strong> {{ contactUs.address }}</p>
                   <p>
-                    <strong>Contact Numbers : </strong>
+                    <strong>Address :</strong>
+                    {{ contactUs.address }}
+                  </p>
+                  <p>
+                    <strong>Contact Numbers :</strong>
                     {{ contactUs.contactNo }}
                   </p>
-                  <p><strong>Email Address : </strong> {{ contactUs.email }}</p>
+                  <p>
+                    <strong>Email Address :</strong>
+                    {{ contactUs.email }}
+                  </p>
                 </center>
               </div>
             </div>
@@ -666,7 +616,8 @@
           </div>
           <div class="col-md-12 col-sm-12 col-xs-12 justify-end">
             <span class="copyright">
-              &copy; 2020 All Rights Reserved by <a href="#">Tsingamo</a>
+              &copy; 2020 All Rights Reserved by
+              <a href="#">Tsingamo</a>
             </span>
           </div>
         </div>
@@ -694,12 +645,19 @@ export default {
         "static/training/10.png"
       ],
       setaAccreditations: [
+        "National Diploma: Public Finance Management and Administration",
+        "Certificate: Municipal Financial Management",
+        "National Certificate: Municipal Governance",
         "National Certificate: Generic Management NQF 5",
         "National Certificate: New Venture Creation NQF 2",
         "National Certificate: New Venture Creation NQF 4",
         "National Certificate: Labor Relations Practice NQF 5",
+        "National Certificate: Labour Relations NQF level 6",
         "Conduct a Disciplinary Hearing NQF 5",
-        "Project Management NQF 4"
+        "Project Management NQF 4",
+        "National Diploma: Public Finance Management and Administration",
+        "National Certificate: Municipal Financial Management",
+        "National Certificate: Municipal Governance"
       ],
       navItems: [
         "Home",
@@ -795,7 +753,7 @@ export default {
         {
           name: "Maladze Makhoshi",
           cell: ["083 200 4414", "083 200 8314"],
-          email: "mmakhoshi@gmail.com",
+          email: "mmakhoshi@tsingamo.com",
           img: "static/maladze.jpg",
           education: [
             "Currently Studying MBA",
@@ -1408,7 +1366,7 @@ export default {
                   queue: false
                 }
               });
-            } catch (err) {}
+            } catch (err) { }
             return false;
           });
 
