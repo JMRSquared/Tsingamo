@@ -1,5 +1,5 @@
 <template>
-  <div class="page-wrapper home-page page-load">
+  <div :id="navItemsID[0]" class="page-wrapper home-page page-load">
     <!-- <div class="preloader">
           			<div id="ajaxloader3">
           				<div class="outer"></div>
@@ -64,7 +64,7 @@
                 <div class="row">
                   <div class="col-md-8 col-sm-12 m-t-20">
                     <div class="carousel-caption">
-                      <span class="title-tag">TSINGAMO management consultant</span>
+                      <span class="title-tag">TSINGAMO management consultants</span>
                       <span>AND People Development</span>
                       <p>
                         is a 100% black owned company officially established in
@@ -149,7 +149,7 @@
       </div>
     </section>
 
-    <section class="full-row background-1 overlay-1">
+    <section :id="navItemsID[2]" class="full-row background-1 overlay-1">
       <div class="container">
         <div class="row">
           <div class="col-md-12 col-sm-12">
@@ -190,7 +190,7 @@
     </section>
 
     <!--Our Service Section-->
-    <section :id="navItemsID[2]" class="full-row background-1 overlay-1">
+    <section :id="navItemsID[3]" class="full-row background-1 overlay-1">
       <div class="container">
         <div class="row">
           <div class="col-md-12 col-sm-12">
@@ -201,7 +201,7 @@
             >
               <h2 class="section-title color-white">
                 <span class="title-tag"></span>
-                {{ navItems[2] }}
+                Services
               </h2>
               <span class="sub-title color-white">
                 Our services include Training,Learnership support services,ETQA
@@ -223,7 +223,7 @@
     </section>
 
     <!-- Qualification-->
-    <section :id="navItemsID[3]">
+    <section :id="navItemsID[4]">
       <div class="full-row background-2 overlay-1 padding-70-0">
         <div class="container">
           <div class="row">
@@ -233,7 +233,9 @@
                 data-wow-delay="300ms"
                 data-wow-duration="500ms"
               >
-                <h2 class="section-title color-orange">We offer the following {{ navItems[3] }}</h2>
+                <h2
+                  class="section-title color-orange"
+                >We offer the following Skills Programs/Short courses</h2>
               </div>
             </div>
           </div>
@@ -256,7 +258,7 @@
     </section>
 
     <!-- Expertise -->
-    <section :id="navItemsID[4]" class="bg-gray">
+    <section :id="navItemsID[5]" class="bg-gray">
       <div class="container">
         <div class="row">
           <div class="col-md-12 col-sm-12">
@@ -267,7 +269,7 @@
             >
               <h2 class="section-title">
                 <span class="title-tag">What We Offer</span>
-                {{ navItems[4] }}
+                Expertise
               </h2>
               <span class="sub-title">
                 We offer training that are tailored to provide solutions to help
@@ -316,7 +318,7 @@
     </section>
 
     <!-- Strategic plan Section-->
-    <section :id="navItemsID[5]" class="full-row">
+    <section :id="navItemsID[6]" class="full-row">
       <div class="container">
         <div class="row">
           <div class="col-sm-6 col-md-4">
@@ -332,7 +334,7 @@
             >
               <h2 class="section-title color-black">
                 <span class="title-tag">Vision, Mission and Objectives</span>
-                {{ navItems[5] }}
+                Strategic plan
               </h2>
             </div>
           </div>
@@ -358,7 +360,7 @@
     </section>
 
     <!--Our Team -->
-    <section :id="navItemsID[6]" class="full-row">
+    <section :id="navItemsID[7]" class="full-row">
       <div class="container">
         <div class="row">
           <div class="col-md-12 col-sm-12">
@@ -369,7 +371,7 @@
             >
               <h2 class="section-title">
                 <span class="title-tag">Learn more about us</span>
-                {{ navItems[6] }}
+                Our team
               </h2>
             </div>
           </div>
@@ -481,7 +483,7 @@
       </div>
     </section>
 
-    <section :id="navItemsID[7]" class="full-row overlay-1">
+    <section :id="navItemsID[8]" class="full-row overlay-1">
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-12 col-sm-12">
@@ -492,7 +494,7 @@
             >
               <h2 class="section-title color-orange">
                 <span class="title-tag"></span>
-                {{ navItems[7] }}
+                Our Clients
               </h2>
               <span class="sub-title color-white">Some companies we have worked with</span>
             </div>
@@ -538,7 +540,7 @@
     </section>
 
     <!-- Gallery -->
-    <section :id="navItemsID[8]" class="full-row">
+    <section :id="navItemsID[9]" class="full-row">
       <div class="container-fluid">
         <div class="col-md-12 col-sm-12">
           <div class="col-md-12 col-sm-12">
@@ -568,7 +570,7 @@
     </section>
 
     <!-- Contact us Section-->
-    <section :id="navItemsID[9]" class="full-row background-1 overlay-1">
+    <section :id="navItemsID[10]" class="full-row background-1 overlay-1">
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-12 col-sm-12">
@@ -579,7 +581,7 @@
             >
               <h2 class="section-title color-white">
                 <span class="title-tag"></span>
-                {{ navItems[9] }}
+                Contact us
               </h2>
             </div>
           </div>
@@ -693,6 +695,7 @@ export default {
       navItems: [
         "Home",
         "About Us",
+        "Accreditations",
         "Services",
         "Skills Programs/Short courses",
         "Expertise",
@@ -705,6 +708,7 @@ export default {
       navItemsID: [
         "Home",
         "AboutUs",
+        "Accreditations",
         "Services",
         "ConstituentAssessorQualifications",
         "Expertise",
