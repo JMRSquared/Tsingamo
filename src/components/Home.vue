@@ -46,6 +46,7 @@
         </div>
       </div>
     </header>
+
     <!--Slider Section-->
     <section id="slider">
       <div class="slider-item" :id="navItemsID[0]">
@@ -56,9 +57,9 @@
           </ol>
 
           <!-- Wrapper for slides -->
-          <div class="carousel-inner" role="listbox">
+          <div role="listbox">
             <div class="item active">
-              <img src="static/withOldMan.jpg" alt="..." />
+              <img style="filter: brightness(0.5);" src="static/withOldMan.jpg" alt="..." />
               <div class="container">
                 <div class="row">
                   <div class="col-md-8 col-sm-12 m-t-20">
@@ -84,24 +85,6 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="request-quote bg-white">
-          <div class="quote-title color-white">
-            <h4 class="color-white">Accredited with Service SETA</h4>
-            <p>Accreditation No: 12243</p>
-          </div>
-          <form class="quote-form" method="post" action="#">
-            <div class="form-group">
-              <h5>Qualifications</h5>
-            </div>
-            <div
-              v-for="(setaAccredited, i) in setaAccreditations"
-              :key="`${i}-seta`"
-              class="form-group"
-            >
-              <p>{{ i + 1 }}. {{ setaAccredited }}</p>
-            </div>
-          </form>
         </div>
       </div>
     </section>
@@ -166,6 +149,46 @@
       </div>
     </section>
 
+    <section class="full-row background-1 overlay-1">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+            <div
+              class="section-title-area wow fadeIn"
+              data-wow-delay="300ms"
+              data-wow-duration="500ms"
+            >
+              <h2 class="section-title color-white">
+                <span class="title-tag"></span>
+                Accredited Qualifications
+              </h2>
+              <span class="sub-title color-white">Accreditation No: 12243</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="padding-left:20px;padding-right:20px">
+        <div class="col-md-4 col-sm-6" :key="i" v-for="(setaAccredited,i) in setaAccreditations">
+          <div class="quote-title" style="padding-right:15px; margin-left-15;margin-bottom:10px">
+            <p class="color-white">{{ setaAccredited }}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="padding-70-0">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="../assets/ads/2.jpg" height="auto" width="100%" alt />
+          </div>
+          <div class="col-md-6">
+            <img src="../assets/ads/1.jpg" height="auto" width="100%" alt />
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!--Our Service Section-->
     <section :id="navItemsID[2]" class="full-row background-1 overlay-1">
       <div class="container">
@@ -199,18 +222,6 @@
       </div>
     </section>
 
-    <section>
-      <div class="padding-70-0">
-        <div class="row">
-          <div class="col-md-6">
-            <img src="../assets/ads/2.jpg" height="auto" width="100%" alt />
-          </div>
-          <div class="col-md-6">
-            <img src="../assets/ads/1.jpg" height="auto" width="100%" alt />
-          </div>
-        </div>
-      </div>
-    </section>
     <!-- Qualification-->
     <section :id="navItemsID[3]">
       <div class="full-row background-2 overlay-1 padding-70-0">
@@ -469,6 +480,7 @@
         </div>
       </div>
     </section>
+
     <section :id="navItemsID[7]" class="full-row overlay-1">
       <div class="container-fluid">
         <div class="row">
